@@ -23,7 +23,7 @@ body {
     background: white;
     padding: 40px 35px;
     border-radius: 15px;
-    background: linear-gradient(to left, purple, white);
+    background: linear-gradient(to left, purple, rgb(235, 145, 227));
 }
 
 .DataRow{
@@ -57,5 +57,37 @@ body {
 .DataRow button img{
   width: 16px;
 }
+
+.weather{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.weatherIcon{
+  width: 170px;
+  margin-top: 30px;
+}
+
+.dettails{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  padding: 0 20px;
+}
+
+.col1{
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.col1 img{
+  width: 40px;
+  margin-right: 10px;
+}
+
 
 
