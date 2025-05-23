@@ -13,22 +13,25 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
 .container{
-    margin-bottom: 200px;
-    max-height: 470px;
+    min-height: 470px;
     width: 90%;
     max-width: 470px;
     background: white;
     padding: 40px 35px;
     border-radius: 15px;
-    background: linear-gradient(to left, purple, white);
+    background: linear-gradient(to left, purple, rgb(235, 145, 227));
+    overflow: hidden;
 }
 
 .DataRow{
     display: flex;
     justify-content: center;
+    gap: 16px;
+    margin-bottom: 20px;
 }
 
 .DataRow input{
@@ -42,6 +45,7 @@ body {
     height: 60px;
     flex: 1;
     outline: 0;
+    min-width: 0;
 }
 
 .DataRow button{
@@ -52,10 +56,71 @@ body {
   height: 60px;
   background: #ebfffc;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .DataRow button img{
   width: 16px;
 }
+
+.weather{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.weatherIcon{
+  width: 100%;
+  max-width: 170px;
+  margin: 20px 0;
+}
+
+.weather h1{
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1;
+  margin: 10px 0;
+}
+
+.weather h2{
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.dettails{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.col1{
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 10px;
+  flex: 1;
+  min-width: 120px;
+}
+
+.col1 img{
+  width: 40px;
+  margin-right: 10px;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+}
+.humidity, .wind{
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+
 
 
